@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MetadataService } from './services/metadata.service';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,16 @@ export class AppComponent {
   progress = 0;
 
   metaInfo = {
-    articles: 1850,
-    words: 148000,
-    databases: 5,
-    progress: 100
+    articles: 0,
+    words: 0,
+    databases: 0,
+    progress: 0
   };
+
+  constructor(private metadataService: MetadataService) {
+     metadataService.getMetadata('sample01').subscribe(data => this.metaInfo = data);
+  }
+
 
   toggleUserInfo() {
     this.userInfoToggle = !this.userInfoToggle;

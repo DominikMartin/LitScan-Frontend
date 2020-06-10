@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CountoModule } from 'angular2-counto';
+import { MetadataService } from './services/metadata.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,9 +12,12 @@ import { CountoModule } from 'angular2-counto';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     CountoModule
   ],
-  providers: [],
+  providers: [
+    MetadataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
