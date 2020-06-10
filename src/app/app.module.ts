@@ -9,13 +9,15 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/report/main/main.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MetadataComponent } from './components/report/metadata/metadata.component';
+import { SearchComponent } from './components/report/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainComponent,
-    MetadataComponent
+    MetadataComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

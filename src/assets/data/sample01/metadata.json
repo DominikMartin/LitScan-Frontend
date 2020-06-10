@@ -1,4 +1,7 @@
 {
+  "query": "(\"Smart\" AND \"Service) OR \"System\"",
+  "date_start": "2020-01-01T22:28:56.782Z",
+  "date_end": "2020-01-02T08:58:56.782Z",
   "articles": 1850,
   "words": 148000,
   "databases": 5,
