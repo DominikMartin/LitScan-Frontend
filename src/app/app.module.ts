@@ -5,15 +5,21 @@ import { AppComponent } from './app.component';
 import { CountoModule } from 'angular2-counto';
 import { MetadataService } from './services/metadata.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { MainComponent } from './components/report/main/main.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    CountoModule
+    CountoModule,
+    AppRoutingModule
   ],
   providers: [
     MetadataService
