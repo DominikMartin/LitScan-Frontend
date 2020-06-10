@@ -10,6 +10,8 @@ import { MainComponent } from './components/report/main/main.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MetadataComponent } from './components/report/metadata/metadata.component';
 import { SearchComponent } from './components/report/search/search.component';
+import { ChartsModule } from 'ng2-charts';
+import { HistoryChartComponent } from './components/report/history-chart/history-chart.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { SearchComponent } from './components/report/search/search.component';
     LoginComponent,
     MainComponent,
     MetadataComponent,
-    SearchComponent
+    SearchComponent,
+    HistoryChartComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     CountoModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [
     MetadataService

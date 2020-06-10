@@ -10560,14 +10560,7 @@ a:focus {
 
 .chart-bar {
   position: relative;
-  height: 10rem;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .chart-bar {
-    height: 20rem;
-  }
 }
 
 .chart-pie {
