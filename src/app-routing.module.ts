@@ -6,7 +6,7 @@ import { MainComponent } from './app/components/report/main/main.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'report/sample01',
     pathMatch: 'full'
   },
   {
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'login'
+    redirectTo: ''
   }
 ];
 
