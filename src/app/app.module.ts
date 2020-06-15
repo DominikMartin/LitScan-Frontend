@@ -13,6 +13,7 @@ import { SearchComponent } from './components/report/search/search.component';
 import { ChartsModule } from 'ng2-charts';
 import { HistoryChartComponent } from './components/report/history-chart/history-chart.component';
 import { WordCloudComponent } from './components/report/word-cloud/word-cloud.component';
+import { ClustersComponent } from './components/report/clusters/clusters.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WordCloudComponent } from './components/report/word-cloud/word-cloud.co
     MetadataComponent,
     SearchComponent,
     HistoryChartComponent,
-    WordCloudComponent
+    WordCloudComponent,
+    ClustersComponent
   ],
   imports: [
     BrowserModule,

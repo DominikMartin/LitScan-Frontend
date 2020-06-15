@@ -1,0 +1,21 @@
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Clusters</h6>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th *ngFor="let key of clusterKeys" scope="col">Cluster {{key}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td *ngFor="let key of clusterKeys" scope="row">
+          <span *ngFor="let word of clusters[key]">{{word}}<br></span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
