@@ -9,6 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class MainComponent implements OnInit {
   userInfoToggle = false;
+  navToggle = false;
 
   ngOnInit(): void {
   }
@@ -17,4 +18,7 @@ export class MainComponent implements OnInit {
     this.userInfoToggle = !this.userInfoToggle;
   }
 
+  toggleNav() {
+    this.navToggle = !this.navToggle;
+  }
 }
