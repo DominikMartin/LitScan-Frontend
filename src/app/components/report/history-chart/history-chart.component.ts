@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ChartDataSets, ChartOptions, ChartType} from 'chart.js';
 import {Label} from 'ng2-charts';
-import {ActivatedRoute, Router} from "@angular/router";
-import {MetadataService} from "../../../services/metadata.service";
-import {HistoryService} from "../../../services/history.service";
+import {ActivatedRoute, Router} from '@angular/router';
+import {HistoryService} from '../../../services/history.service';
 
 @Component({
   selector: 'app-history-chart',
