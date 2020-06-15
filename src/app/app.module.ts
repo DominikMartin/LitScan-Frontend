@@ -12,6 +12,7 @@ import { MetadataComponent } from './components/report/metadata/metadata.compone
 import { SearchComponent } from './components/report/search/search.component';
 import { ChartsModule } from 'ng2-charts';
 import { HistoryChartComponent } from './components/report/history-chart/history-chart.component';
+import { WordCloudComponent } from './components/report/word-cloud/word-cloud.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HistoryChartComponent } from './components/report/history-chart/history
     MainComponent,
     MetadataComponent,
     SearchComponent,
-    HistoryChartComponent
+    HistoryChartComponent,
+    WordCloudComponent
   ],
   imports: [
     BrowserModule,
